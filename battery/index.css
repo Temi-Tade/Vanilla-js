@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     transition: .5s;
+    font-family: "Anta";
 }
 
 *:focus{
@@ -27,6 +28,7 @@ html{
     height: 100dvh;
     background-color: rgb(37, 37, 37);
     color: rgb(247, 250, 252);
+    font-family: "Anta";
 }
 
 body{
@@ -35,6 +37,7 @@ body{
 
 header{
     padding: .75rem;
+    box-shadow: 0 0 2px #efe;
 }
 
 #container{
@@ -97,4 +100,12 @@ th{
 
 #level{
     background-color: #2f22ec77
+}
+
+@media screen and (max-width: 650px) {
+    #container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
