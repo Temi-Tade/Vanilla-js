@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+div{
+    width: 12rem;
+    height: 12rem;
+    background-color: #111;
+    position: relative;
+}
+
+span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(rgba(63, 70, 63, 0.034), rgba(14, 224, 14, 0.822));
+    animation: scan 1s infinite;
+}

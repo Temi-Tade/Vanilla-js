@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes blink {
+    from{
+        opacity: 1;
+    }to{
+        opacity: .02;
+    }
+}
+
+body{
+    background-color: #333;
+    font-family: sans-serif;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #12fe34;
+    font-size: 2.5rem;
+}
+
+h1::after{
+    background-color: #12fe34;
+    height: 2rem;
+    padding: .25rem;
+    margin: .5rem;
+    content: "";
+    animation: blink .75s infinite; 
+}
