@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg: #1771AA;
+    --color: #fff;
+}
+
+#root{
+    margin: 1rem auto;
+    width: 90vw;
+    height: 300px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    background: transparent;
+}
+
+section{
+    display: inline-grid;
+    place-items: center;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    margin: 1rem;
+    scroll-snap-align: center;
+    border-radius: .6rem;
+}
+
+.inview{
+    box-shadow: 0 0 4px 2px #7777;
+}
+
+#progress{
+    display: flex;
+    justify-content: center;
+}
+
+.position{
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: black;
+    margin: 0 .25rem;
+}
+
+.current{
+    background-color: orange;
+}
