@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --theme: #2749e2dd;
+    --light-text-color: #333;
+    --dark-text-color: #eee;
+    --border-radius: .6rem;
+    --font-size-small: .85rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.25rem;
+    --folder-color: #dd9701;
+}
+
+ul{
+    list-style: none;
+}
+
+h1, hr{
+    display: none;
+}
+
+button{
+    border: 0;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+#fe-header{
+    padding: .5rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 0 7px 4px #7777;
+}
+
+#fe-nav{
+    display: flex;
+    align-items: center;
+}
+
+#fe-toolbar{
+    padding: .5rem;
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+#fe-toolbar label{
+    cursor: pointer;
+}
+
+#fe-views{
+    width: 10rem;
+    height: 2rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fe-views input{
+    display: none;
+}
+
+#fe-views label{
+    display: block;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+}
+
+#fe-views label span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25rem;
+    transition: .25s;
+}
+
+#fe-views input:checked+span{
+    background-color: #2749e2;
+    color: var(--dark-text-color);
+}
+
+#fe-nav button{
+    width: 2rem;
+    height: 2rem;
+    font-size: var(--font-size-large);
+    border-radius: 50%;
+    margin-right: .5rem;
+    background-color: transparent;
+    transition: .5s;
+}
+
+#fe-nav button:hover{
+    background-color: #7773;
+}
+
+#fe-nav p{
+    background-color: #acacac77;
+    width: 100%;
+    padding: .35rem .75rem;
+    border-radius: .25rem;
+    font-size: .9rem;
+}
+
+#fe-files{
+    padding: 1rem;
+}
+
+#fe-files ul li{
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 5rem;
+    height: fit-content;
+    margin: 1rem;
+    text-align: center;
+    padding: .5rem;
+    transition: .25s;
+    border-radius: .25rem;
+}
+
+#fe-files ul li:hover{
+    background-color: #6ed1ff77;
+}
+
+#fe-files a{
+    width: 100%;
+    height: 80%;
+    font-size: 3rem;
+    /* color: var(--theme); */
+}
+
+#fe-files a:hover+p{
+    text-decoration: underline;
+}
+
+#fe-files p{
+    width: 100%;
+    font-size: var(--font-size-small);
+    word-break: break-all;
+}
+
+.folder{
+    color: var(--folder-color);
+}

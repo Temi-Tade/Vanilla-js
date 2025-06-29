@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <div id="fe">
+            <div id="fe-header">
+                <nav id="fe-nav">
+                    <button onclick="GOTO_PREVIOUS_PATH()">&larr;</button>
+                    <p id="fe-path"></p>
+                </nav>
+
+                <div id="fe-toolbar">
+                    <label for="show_hidden">
+                        <input type="checkbox" name="show_hidden" id="show_hidden" oninput="SHOW_HIDDEN_FILES(this)">
+                        Show hidden files/folders
+                    </label>
+
+                    <div id="fe-views">
+                        <label for="list-view">
+                            <input type="radio" name="view" id="list-view" value="list" oninput="SET_VIEW(this)">
+                            <span>List</span>
+                        </label>
+
+                        <label for="grid-view">
+                            <input type="radio" name="view" id="grid-view" value="grid" checked oninput="SET_VIEW(this)">
+                            <span>Grid</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fe-files"></div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
+
+<!-- 
+    - view: list, grid
+-->
